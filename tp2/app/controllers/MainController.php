@@ -1,5 +1,13 @@
+<?php
+namespace controllers;
  /**
- *
- * @get("_default","name"=>"Home")
- */
- public function index() {}
+ * Controller MainController
+ **/
+class MainController extends ControllerBase{
+
+    public function index(){}
+	    /**
+	     * @get("_default","name"=>"Home")
+	    **/
+	
+}
