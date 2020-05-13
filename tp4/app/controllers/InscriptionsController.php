@@ -1,15 +1,24 @@
 <?php
 namespace controllers;
  /**
- * Controller InscriptionsController
+ * Controller InscriptionController
  **/
-class InscriptionsController extends ControllerBase{
-    /**
-     *
-     * @get("_default","name"=>"Home")
-     */
+ class InscriptionController extends ControllerBase{
+
+	/**
+	*
+	* @get("_default","name"=>"Home")
+	*/
 	public function index(){
-		echo 'Bienvenue ! Cette application vous permet de vous inscrire à notre prochaine flasmob.';
+		$this->loadView("InscriptionController/index.html");
+	}
+
+	/**
+	 *@route("inscription")
+	**/
+	public function bouton(){
+		
+		$this->loadView('InscriptionController/bouton.html');
 
 	}
-}
+ }
